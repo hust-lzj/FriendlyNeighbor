@@ -1,0 +1,37 @@
+<view class="page-container">
+  <image class="back-picture" src="/images/back_left.svg" bindtap="backto"></image>
+  <view class="container">
+    <view class="container1">
+      <view class="header">我要求助</view>
+      <text style="margin-top: 8vh;margin-left: 10vw;">名称</text>
+      <view style="display: flex;margin-top: 2vh;margin-left: 6vw;">
+        <image src="/images/green-drop.svg" style="height: 4vh;" mode="heightFix"></image>
+        <input type="name" bindinput="inputName" style="margin-left: 2vw;width:70vw;border: solid rgb(207, 203, 203);border-radius:15px;height: 4vh;padding-left: 1vw;" placeholder="请输入物品名称"></input>
+      </view>
+      <text style="margin-top: 4vh;margin-left: 10vw;">求助类型</text>
+      <view style="display: flex;margin-top: 2vh;margin-left: 6vw;">
+        <image src="/images/green-drop.svg" style="height: 4.5vh;" mode="heightFix"></image>
+        <view class="bt-box">
+          <text bindtap="changeColor1" style="background-color:{{btnColor1}};font-size:medium">生活物资</text>
+          <text bindtap="changeColor2" style="background-color:{{btnColor2}};font-size:medium">医疗物资</text>
+          <text bindtap="changeColor3" style="background-color:{{btnColor3}};font-size:medium">社会服务</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="container4">
+    <text class="container2">联系方式</text>
+    <input class="container2-input" type="telnum" bindinput="inputTelnum" placeholder="请输入电话号码"></input>
+    <text class="container2">数量</text>
+    <input class="container2-input" type="quantity" bindinput="inputQuantity" placeholder="请输入所需数量;例：一斤、两瓶"></input>
+    <text class="container2">详细情况</text>
+    <input class="container2-input" type="Details" bindinput="inputDetails" placeholder="例：急需口罩一袋"></input>
+    <text>\n\n</text>
+  </view>
+  <image class="bottom-picture" src="/images/row.png" mode="widthFix"></image>
+  <view class="container3">
+    <image src="/images/状态.png" style="height: 25px;margin-left: 10px;margin-top: 1vw;" mode="heightFix"></image>
+    <image src="/images/进行中.png" style="height: 25px;margin-left: 20px;margin-top: 1vw;" mode="heightFix"></image>
+    <image src="/images/greenbtn1.png" style="height: 30px;margin-left: auto;margin-top: 1vw;" mode="heightFix" bindtap="require"></image>
+  </view>
+</view>

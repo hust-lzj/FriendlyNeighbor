@@ -1,0 +1,25 @@
+<image class="back-picture" src="/images/back_left.svg" bindtap="backto"></image>
+<image class="picture-top1" src="/images/detail1.png"></image>
+<view class="head-container"></view>
+<view class="content">
+  <text class="header">{{datadic[0]}}\n</text>
+  <view wx:if="{{datadic[1]==1}}" class="classify1" >生活物资</view>
+  <view wx:elif="{{datadic[1]==2}}" class="classify2" >医疗物资</view>
+  <view wx:else class="classify3" >社会服务</view>
+  <text style="margin-left: 10px;">{{datadic[2]}}</text>
+  <view class="content1">
+    <image src="/images/manager.svg" style="width: 20px;margin-top: 10px;margin-left: 10px;" mode="widthFix"></image>
+    <text style="margin-top: 10px;margin-left: 10px;">{{datadic[3]}}</text>
+  </view>
+  <view class="content1">
+    <image src="/images/phone2.svg" style="width: 20px;margin-top: 10px;margin-left: 10px;" mode="widthFix"></image>
+    <text style="margin-top: 10px;margin-left: 10px;">{{datadic[4]}}</text>
+  </view>
+  <view class="content1">
+    <image src="/images/clock2.svg" style="width: 20px;margin-top: 10px;margin-left: 10px;" mode="widthFix"></image>
+    <text style="margin-top: 10px;margin-left: 10px;">{{datadic[5]}}</text>
+  </view>
+</view>
+<!-- <image src="/images/content3.png" style="width: 290px;margin-left: 40px;margin-top: 20px;" mode="widthFix"></image> -->
+<!-- 这个是分享按钮 -->
+<button class = "mess-send" >我要分享</button>

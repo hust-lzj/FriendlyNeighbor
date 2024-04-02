@@ -1,0 +1,14 @@
+<!--pages/list/list.wxml-->
+<view class="container">
+  <view class="header">
+  </view>
+  <view class="form">
+    <input type="account" placeholder="请输入账号" bindinput="inputAccount"></input>
+    <input type="password" placeholder="请输入密码" bindinput="inputPassword"></input>
+    <!-- <button bindtap="login" >登录</button> -->
+    <button bindtap='toface'>登陆</button>
+    <button bindtap='test'>测试</button>
+    <button bindtap='tofirstpage'>测试2</button>
+    <button bindtap="tohouduan">后端交互</button>
+  </view>
+</view>

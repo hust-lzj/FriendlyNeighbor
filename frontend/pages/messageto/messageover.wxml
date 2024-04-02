@@ -1,0 +1,9 @@
+<image class="back-picture" src="/images/back_left.svg" bindtap="backto"></image>
+<view class ="oval"></view>
+<view class="logo-container">
+  <image class="logo" src="/images/logo.png" mode="widthFix"></image>
+</view>
+<text class="header">反馈成功</text>
+<image class="center-picture" src="/images/border.png" mode="widthFix"></image>
+<image class="center-picture1" src="/images/yuan.svg" mode="widthFix"></image>
+<text class="center-text">意见反馈提交成功，我们将尽快回复您</text>

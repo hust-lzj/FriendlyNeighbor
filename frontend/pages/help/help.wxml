@@ -1,0 +1,18 @@
+<image class="back-picture" src="/images/back_left.svg" bindtap="backto"></image>
+<view class="logo-container">
+  <image class="logo" src="/images/logo.png" mode="widthFix"></image>
+</view>
+<image class="picture-top" src="/images/aboutus.png"></image>
+<view><text class="header">常见帮助</text></view>
+<view class = "question-container">
+  <view class = "ques-panel">Q：我要怎样知道我的求助/分享被受理了？</view>
+  <view class = "ans-panel">A：您的求助者或分享者会通过电话与您联系，请注意接听</view>
+  <view class = "ques-panel">Q：我的求助/分享成功后怎么办？</view>
+  <view class = "ans-panel">A：您需要通过“求助列表”、“分享列表”将其进度修改为“已完成”，系统将不会再推送</view>
+  <view class = "ques-panel">Q：我不需要进行求助\分享了怎么办？</view>
+  <view class = "ans-panel">A：您需要通过“求助列表”或“分享列表”将其进度修改为“已取消”，系统就不会再推送</view>
+  <view class = "ques-panel">Q：我是否可以拒绝他人的求助或分享？</view>
+  <view class = "ans-panel">A：可以，在此基础上则不必修改求助或分享的进度</view>
+
+  <view class = "more-que">更多帮助</view>
+</view>

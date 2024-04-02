@@ -1,0 +1,12 @@
+<view class="page-container">
+  <view class="container">
+    <text class="header">服务协议和隐私政策</text>
+    <text class="content">欢迎使用友邻互助小程序。</text>
+    <view class="content1">
+      <text>请您仔细阅读并充分理解</text><text class="policy" bindtap="topolicy">《隐私政策》</text>
+      <text>如果您同意</text><text class="policy" bindtap="topolicy">《隐私政策》</text><text>的全部内容，请点击“同意”开始使用我们的服务</text>
+    </view>
+    <button class = "login-button" form-type="submit" style="margin-top: 5vh;" bindtap="getUserProfile">同意</button>
+    <button class = "login-button1" form-type="submit">不同意</button>
+  </view>
+</view>

@@ -1,0 +1,12 @@
+<image class="back-picture" src="/images/back_left.svg" bindtap="backto"></image>
+<!-- <image class="picture-top" src="/images/aboutus.png"></image> -->
+<view class="oval">
+  <view class = "success" >
+    <text>您已成功求助</text>
+    <text style="color: red;">1</text>
+    <text>次</text>
+  </view>
+</view>
+<text class="header">求助历史</text>
+<button bindtap="getadress">获取定位</button>
+<button bindtap="login">登陆</button>

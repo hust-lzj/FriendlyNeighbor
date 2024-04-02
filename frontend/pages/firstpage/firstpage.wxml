@@ -1,0 +1,9 @@
+<!--pages/firstpage/firstpage.wxml-->
+<view class="pageground">
+<view class = "slogan"><text>友邻让爱更近</text></view>
+<view class = "logopart">
+  <view class = "logoimage"><image src = "/images/logo2.png" mode = "widthFix"  style="width: 50px;"></image>
+  </view>
+  <view class = "logoword" style="margin-left: 30px;"><text>友邻互助</text></view>
+</view>
+</view>

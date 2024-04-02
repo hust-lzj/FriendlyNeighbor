@@ -1,0 +1,31 @@
+/* pages/firstpage/firstpage.wxss */
+.pageground{
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(140deg, rgba(209, 247, 229,0.9),rgba(230,245,240,0.65),rgba(255,255,255,0),rgba(255,255,255,0), rgba(222, 248, 246,0.65),rgba(207, 252, 248,0.9));
+}
+.slogan{
+  height: 50vh;
+  font-family:  'Source Han Sans ','Microsoft Yahei';
+  font-size: 35px;
+  color: rgba(88, 209, 236,0.8);
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 1.5vh;
+  position: relative;
+  top: 40vh;
+}
+
+.logopart{
+  display: flex;
+  margin-top: 35vh;
+  font-family: 'Source Han Sans ' ;
+  font-size: 20px;
+  color: rgba(98, 217, 203,1);
+  font-weight: 400;
+  text-align: right;
+  letter-spacing: 0.5vh;
+  background-position: center;
+  padding-right: 15vh;
+  padding-left: 15vh;
+}

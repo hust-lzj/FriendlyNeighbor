@@ -1,0 +1,42 @@
+{
+  "pages":[
+    "pages/firstpage/firstpage",
+    "pages/index/index",
+    "pages/face/face",
+    "pages/logs/logs",
+    "pages/content/require",
+    "pages/content/share",
+    "pages/over/over1",
+    "pages/over/over2",
+    "pages/history/history1",
+    "pages/history/history2",
+    "pages/usercenter/usercenter",
+    "pages/aboutus/aboutus",
+    "pages/messageto/messageto",
+    "pages/messageto/messageover",
+    "pages/help/help",
+    "pages/details/detail1",
+    "pages/details/detail2",
+    "pages/login/login",
+    "pages/policy/policy",
+    "pages/policy/policy1",
+    "pages/test/test",
+    "pages/test/test1"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "您的位置信息将服务于小程序的物资互助"
+    }
+  },
+  "requiredBackgroundModes": ["location"],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "友邻互助",
+    "navigationBarTextStyle":"black",
+    "navigationStyle": "custom"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

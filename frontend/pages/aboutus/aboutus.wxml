@@ -1,0 +1,15 @@
+<view class = "headpanel"><image class="back-picture" src="/images/back_left.svg" bindtap="backto"></image>
+<view class="oval"></view>
+<view class="logo-container">
+  <image class="logo" src="/images/logo.png" mode="widthFix"></image>
+</view>
+<!-- <image class="picture-top" src="/images/aboutus.png"></image> -->
+
+<text  class="header">关于我们</text>
+</view>
+<view class="text-box">
+  <text decode="{{true}}" space="emsp">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;友邻互助平台微信小程序由华中科技大学地普开物团队研发，旨在满足小区居民进行日常生活物资分享流通、邻里互助的需求。\n</text>
+  <text decode="{{true}}" space="emsp">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;该平台基于地理位置信息技术为小区居民提供免费的“区域性互助”，具体而言能提供生活物资、医疗物资和社会服务等求助和分享。平台的网页版本于2020年上线，受到社会热心人士的支持，在有效的推广下，用户数量显著增长，覆盖范围不断扩大。团队怀揣着让科技服务于社会发展的理想，努力推动“公益初心，科技向善”成为现实。\n</text>
+  <text decode="{{true}}" space="emsp">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我们承诺：用户使用期间涉及的隐私不会泄露给任何第三方，地普开物竭诚为大家服务，请您放心使用。</text>
+</view>
+

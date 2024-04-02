@@ -1,0 +1,87 @@
+<image class="back-picture" src="/images/back_left.svg" bindtap="backto"></image>
+<!-- <image class="picture-top" src="/images/aboutus.png"></image> -->
+<view class="oval">
+  <view class = "success" >
+    <text>您已成功分享</text>
+    <text style="color: red;">{{rest_num}}</text>
+    <text>次</text>
+  </view>
+</view>
+<text class="header">分享历史</text>
+<view>
+  <view class="item-box">
+    <view class = "ques-panel">
+      <view style="display: flex;">
+        <text class="header1">{{data1[0]}}</text>
+        <text class="num">数量：{{data1[1]}}</text>
+      </view>
+      <view style="display: flex;flex-direction: column;">
+        <view style="display: flex;">
+          <image class="little-picture" src="/images/map.svg" mode="widthFix"></image>
+          <text class="postion">{{data1[7]}},{{data1[8]}}</text>
+        </view>
+        <view style="display: flex;">
+          <image class="little-picture" src="/images/clock.svg" mode="widthFix"></image>
+          <text class="time">{{data1[6]}}</text>
+        </view>
+      </view>
+    </view>
+    <view class = "ans-panel">
+        <view wx:if="{{data1[5]==1}}"><image src="/images/hospitalthing.png" style="height: 2.5vh;margin-top: 1vh;margin-left: 1vw;margin-bottom: 1vh;" mode="heightFix"></image></view>
+        <view wx:elif="{{data1[5]==2}}"><image src="/images/hospitalthing.png" style="height: 2.5vh;margin-top: 1vh;margin-left: 1vw;margin-bottom: 1vh;" mode="heightFix"></image></view>
+        <view wx:else><image src="/images/Socialservice.png" style="height: 2.5vh;margin-top: 1vh;margin-left: 1vw;margin-bottom: 1vh;" mode="heightFix"></image></view>
+        <view wx:if="{{data1[10]==1}}" style="height: 2.5vh;margin-top: 1vh;margin-left: auto;margin-bottom: 1vh;"><text style="color: rgb(0, 218, 91);text-decoration:underline;" bindtap="ChangeNow" data-datanum1="{{data1[10]}}" data-datanum2="1">进行中</text></view>
+        <view wx:else style="height: 2.5vh;margin-top: 1vh;margin-left: auto;margin-bottom: 1vh;"><text style="color: rgb(87, 199, 233);text-decoration:underline;">已完成</text></view>
+    </view>
+  </view>
+  <view class="item-box">
+    <view class = "ques-panel">
+      <view style="display: flex;">
+        <text class="header1">{{data2[0]}}</text>
+        <text class="num">数量：{{data2[1]}}</text>
+      </view>
+      <view style="display: flex;flex-direction: column;">
+        <view style="display: flex;">
+          <image class="little-picture" src="/images/map.svg" mode="widthFix"></image>
+          <text class="postion">{{data2[7]}},{{data2[8]}}</text>
+        </view>
+        <view style="display: flex;">
+          <image class="little-picture" src="/images/clock.svg" mode="widthFix"></image>
+          <text class="time">{{data2[6]}}</text>
+        </view>
+      </view>
+    </view>
+    <view class = "ans-panel">
+        <view wx:if="{{data2[5]==1}}"><image src="/images/hospitalthing.png" style="height: 2.5vh;margin-top: 1vh;margin-left: 1vw;margin-bottom: 1vh;" mode="heightFix"></image></view>
+        <view wx:elif="{{data2[5]==2}}"><image src="/images/hospitalthing.png" style="height: 2.5vh;margin-top: 1vh;margin-left: 1vw;margin-bottom: 1vh;" mode="heightFix"></image></view>
+        <view wx:else><image src="/images/Socialservice.png" style="height: 2.5vh;margin-top: 1vh;margin-left: 1vw;margin-bottom: 1vh;" mode="heightFix"></image></view>
+        <view wx:if="{{data2[10]==1}}" style="height: 2.5vh;margin-top: 1vh;margin-left: auto;margin-bottom: 1vh;"><text style="color: rgb(0, 218, 91);text-decoration:underline;" bindtap="ChangeNow" data-datanum1="{{data2[10]}}" data-datanum2="2">进行中</text></view>
+        <view wx:else style="height: 2.5vh;margin-top: 1vh;margin-left: auto;margin-bottom: 1vh;"><text style="color: rgb(87, 199, 233);text-decoration:underline;">已完成</text></view>
+    </view>
+  </view>
+  <view class="item-box">
+    <view class = "ques-panel">
+      <view style="display: flex;">
+        <text class="header1">{{data3[0]}}</text>
+        <text class="num">数量：{{data3[1]}}</text>
+      </view>
+      <view style="display: flex;flex-direction: column;">
+        <view style="display: flex;">
+          <image class="little-picture" src="/images/map.svg" mode="widthFix"></image>
+          <text class="postion">{{data3[7]}},{{data3[8]}}</text>
+        </view>
+        <view style="display: flex;">
+          <image class="little-picture" src="/images/clock.svg" mode="widthFix"></image>
+          <text class="time">{{data3[6]}}</text>
+        </view>
+      </view>
+    </view>
+    <view class = "ans-panel">
+        <view wx:if="{{data3[5]==1}}"><image src="/images/hospitalthing.png" style="height: 2.5vh;margin-top: 1vh;margin-left: 1vw;margin-bottom: 1vh;" mode="heightFix"></image></view>
+        <view wx:elif="{{data3[5]==2}}"><image src="/images/hospitalthing.png" style="height: 2.5vh;margin-top: 1vh;margin-left: 1vw;margin-bottom: 1vh;" mode="heightFix"></image></view>
+        <view wx:else><image src="/images/Socialservice.png" style="height: 2.5vh;margin-top: 1vh;margin-left: 1vw;margin-bottom: 1vh;" mode="heightFix"></image></view>
+        <view wx:if="{{data3[10]==1}}" style="height: 2.5vh;margin-top: 1vh;margin-left: auto;margin-bottom: 1vh;"><text style="color: rgb(0, 218, 91);text-decoration:underline;" bindtap="ChangeNow" data-datanum1="{{data3[10]}}" data-datanum2="3">进行中</text></view>
+        <view wx:else style="height: 2.5vh;margin-top: 1vh;margin-left: auto;margin-bottom: 1vh;"><text style="color: rgb(87, 199, 233);text-decoration:underline;">已完成</text></view>
+    </view>
+  </view>
+</view>

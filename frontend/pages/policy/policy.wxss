@@ -1,0 +1,13 @@
+.back-picture{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  z-index: 2;
+  top:3.5vh;
+}
+.header{
+  font-weight: 900;
+  text-align: center;
+  width: 100vw;
+  margin-top: 4vh;
+}

@@ -1,0 +1,74 @@
+.header{
+  position: absolute;
+  z-index: 1;
+  left: 40vw;
+  right: 40vw;
+  top: 5vh;
+}
+.back-picture{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  z-index: 2;
+  top:20px;
+}
+/* .picture-top{
+  width: 100%;
+  z-index: 0;
+} */
+.oval{
+  position: relative;
+  left:-10vw;
+  right:-10vw;
+  height: 30vh;
+  background-image: linear-gradient(180deg, rgb(92, 224, 233),rgb(99, 231, 220),rgba(102, 235, 202, 0.9));
+  border-radius: 0px 0px 47% 47%;
+  width: 120vw;
+}
+
+.success{
+  position: relative;
+  top: 14vh; 
+  height: 4vh;
+  left: 40vw;
+  right: 40vw;
+  width:40vw;
+  border-radius: 5px;
+  box-shadow: 0px 2px 2px 2px rgba(100, 100, 100, 0.3);
+  /* text-align: center; */
+  font-weight: 400; 
+  font-size: 15px;
+  background-color: white;
+  text-align: center;
+}
+.ques-panel{
+  font-size:15px;
+  line-height:1.5em;
+  padding-left: 2vw;
+  padding-right:2vw;
+  width: 85vw;
+  position:relative;
+  border-radius: 10px 10px 0px 0px;
+}
+.ans-panel{
+  display: flex;
+  font-size: 15px;
+  line-height: 1.5em;
+  padding-left: 2vw;
+  padding-right:2vw;
+  border-top:1px dashed rgb(146, 144, 144);
+  position:relative;
+  width:85vw;
+  border-radius: 0px 0px 10px 10px;  
+}
+.little-picture{
+  width: 5vw;
+}
+.item-box{
+  box-shadow: 10rpx 10rpx 10rpx 10rpx #868484;
+  border-radius: 10px 10px 10px 10px;
+  margin-left:5vw;
+  margin-right:5vw;
+  margin-top: 1vh;
+  margin-bottom: 3vh;
+}

@@ -1,0 +1,221 @@
+<text class="header">首页\n</text>
+<view class="container">
+  <image class="picture2" src="/images/face.png"></image>
+  <image class="picture1" src="{{touxiang}}" bindtap="userself"></image>
+  <view class="container1">
+    <text style="font-size: 25px;">{{user_name}}</text>
+    <text style="margin-top: 1vh;font-size: small;">华中科技大学</text>
+  </view>
+</view>
+<view class="button-container">
+  <button style="width: 10vw;margin-left: 10vw;" bindtap="torequire">我要求助</button>
+  <button style="width: 10vw;margin-right: 10vw;" bindtap="toshare">我要分享</button>
+</view>
+<view style="display: flex;justify-content: center;">
+  <view class='TabSwiper'>
+      <view class='tab  {{currentData == 0 ? "tabBorer" : ""}}'  data-current = "0" bindtap='checkCurrent'>求助列表</view>
+      <view class='tab  {{currentData == 1 ? "tabBorer" : ""}}'  data-current = "1" bindtap='checkCurrent'>分享列表</view>
+  </view>
+</view>
+<swiper current="{{currentData}}" class='swiper' duration="300" bindchange="bindchange">
+  <swiper-item>
+    <view class="search-box">
+      <input class="search-input" type="text" placeholder="请输入搜索内容"></input>
+      <text class="search-btn" size="mini" bindtap="search1">搜索</text>
+    </view>
+    <view class="picker-box">
+      <picker mode="selector" range="{{range1}}" bindchange="onPickerChange1">
+        <view class="picker-btn">{{selected1}}
+          <image src="/images/down.svg" style="width: 3vw;margin-left: auto;" mode="widthFix"></image>
+        </view>
+      </picker>
+      <picker mode="selector" range="{{range2}}" bindchange="onPickerChange2">
+        <view class="picker-btn">{{selected2}}
+          <image src="/images/down.svg" style="width: 3vw;margin-left: auto;" mode="widthFix"></image>
+        </view>
+      </picker>
+      <picker mode="selector" range="{{range3}}" bindchange="onPickerChange3">
+        <view class="picker-btn">{{selected3}}
+          <image src="/images/down.svg" style="width: 3vw;margin-left: auto;" mode="widthFix"></image>
+        </view>
+      </picker>
+    </view>
+    <view>
+      <view class="item-box">
+        <view class = "ques-panel">
+          <view style="display: flex;">
+            <text class="header1">{{data1[0]}}</text>
+            <text class="num">数量：{{data1[1]}}</text>
+          </view>
+          <view style="display: flex;flex-direction: column;">
+            <view style="display: flex;">
+              <image class="little-picture" src="/images/map.svg" mode="widthFix"></image>
+              <text class="postion">{{data1[7]}},{{data1[8]}}</text>
+            </view>
+            <view style="display: flex;">
+              <image class="little-picture" src="/images/clock.svg" mode="widthFix"></image>
+              <text class="time">{{data1[6]}}</text>
+            </view>
+          </view>
+        </view>
+        <view class = "ans-panel">
+            <view wx:if="{{data1[5]==1}}"><image src="/images/lifething.png" style="height: 2.5vh;margin-top: 1vh;margin-left: 1vw;margin-bottom: 1vh;" mode="heightFix"></image></view>
+            <view wx:elif="{{data1[5]==2}}"><image src="/images/hospitalthing.png" style="height: 2.5vh;margin-top: 1vh;margin-left: 1vw;margin-bottom: 1vh;" mode="heightFix"></image></view>
+            <view wx:else><image src="/images/Socialservice.png" style="height: 2.5vh;margin-top: 1vh;margin-left: 1vw;margin-bottom: 1vh;" mode="heightFix"></image></view>
+            <!-- <text>{{data1[5]}}</text> -->
+            <image src="/images/lookover.png" style="height: 2.5vh;margin-top: 1vh;margin-left: auto;margin-bottom: 1vh;" mode="heightFix" bindtap="torequiredata" data-datanum="1"></image>
+        </view>
+      </view>
+      <view class="item-box">
+        <view class = "ques-panel">
+          <view style="display: flex;">
+            <text class="header1">{{data2[0]}}</text>
+            <text class="num">数量：{{data2[1]}}</text>
+          </view>
+          <view style="display: flex;flex-direction: column;">
+            <view style="display: flex;">
+              <image class="little-picture" src="/images/map.svg" mode="widthFix"></image>
+              <text class="postion">{{data2[7]}},{{data2[8]}}</text>
+            </view>
+            <view style="display: flex;">
+              <image class="little-picture" src="/images/clock.svg" mode="widthFix"></image>
+              <text class="time">{{data2[6]}}</text>
+            </view>
+          </view>
+        </view>
+        <view class = "ans-panel">
+            <view wx:if="{{data2[5]==1}}"><image src="/images/lifething.png" style="height: 2.5vh;margin-top: 1vh;margin-left: 1vw;margin-bottom: 1vh;" mode="heightFix"></image></view>
+            <view wx:elif="{{data2[5]==2}}"><image src="/images/hospitalthing.png" style="height: 2.5vh;margin-top: 1vh;margin-left: 1vw;margin-bottom: 1vh;" mode="heightFix"></image></view>
+            <view wx:else><image src="/images/Socialservice.png" style="height: 2.5vh;margin-top: 1vh;margin-left: 1vw;margin-bottom: 1vh;" mode="heightFix"></image></view>
+            <!-- <text>{{data2[5]}}</text> -->
+            <image src="/images/lookover.png" style="height: 2.5vh;margin-top: 1vh;margin-left: auto;margin-bottom: 1vh;" mode="heightFix" bindtap="torequiredata" data-datanum="2"></image>
+        </view>
+      </view>
+      <view class="item-box">
+        <view class = "ques-panel">
+          <view style="display: flex;">
+            <text class="header1">{{data3[0]}}</text>
+            <text class="num">数量：{{data3[1]}}</text>
+          </view>
+          <view style="display: flex;flex-direction: column;">
+            <view style="display: flex;">
+              <image class="little-picture" src="/images/map.svg" mode="widthFix"></image>
+              <text class="postion">{{data3[7]}},{{data3[8]}}</text>
+            </view>
+            <view style="display: flex;">
+              <image class="little-picture" src="/images/clock.svg" mode="widthFix"></image>
+              <text class="time">{{data3[6]}}</text>
+            </view>
+          </view>
+        </view>
+        <view class = "ans-panel">
+            <view wx:if="{{data3[5]==1}}"><image src="/images/lifething.png" style="height: 2.5vh;margin-top: 1vh;margin-left: 1vw;margin-bottom: 1vh;" mode="heightFix"></image></view>
+            <view wx:elif="{{data3[5]==2}}"><image src="/images/hospitalthing.png" style="height: 2.5vh;margin-top: 1vh;margin-left: 1vw;margin-bottom: 1vh;" mode="heightFix"></image></view>
+            <view wx:else><image src="/images/Socialservice.png" style="height: 2.5vh;margin-top: 1vh;margin-left: 1vw;margin-bottom: 1vh;" mode="heightFix"></image></view>
+            <!-- <text>{{data3[5]}}</text> -->
+            <image src="/images/lookover.png" style="height: 2.5vh;margin-top: 1vh;margin-left: auto;margin-bottom: 1vh;" mode="heightFix" bindtap="torequiredata" data-datanum="3"></image>
+        </view>
+      </view>
+    </view>
+  </swiper-item> 
+  <swiper-item>
+    <view class="search-box">
+      <input class="search-input" type="text" placeholder="请输入搜索内容"></input>
+      <text class="search-btn" size="mini" bindtap="search2">搜索</text>
+    </view>
+    <view class="picker-box">
+      <picker mode="selector" range="{{range1}}" bindchange="onPickerChange1">
+        <view class="picker-btn">{{selected1}}
+          <image src="/images/down.svg" style="width: 3vw;margin-left: auto;" mode="widthFix"></image>
+        </view>
+      </picker>
+      <picker mode="selector" range="{{range2}}" bindchange="onPickerChange2">
+        <view class="picker-btn">{{selected2}}
+          <image src="/images/down.svg" style="width: 3vw;margin-left: auto;" mode="widthFix"></image>
+        </view>
+      </picker>
+      <picker mode="selector" range="{{range3}}" bindchange="onPickerChange3">
+        <view class="picker-btn">{{selected3}}
+          <image src="/images/down.svg" style="width: 3vw;margin-left: auto;" mode="widthFix"></image>
+        </view>
+      </picker>
+    </view>
+    <view>
+      <view class="item-box">
+        <view class = "ques-panel">
+          <view style="display: flex;">
+            <text class="header1">{{data4[0]}}</text>
+            <text class="num">数量：{{data4[1]}}</text>
+          </view>
+          <view style="display: flex;flex-direction: column;">
+            <view style="display: flex;">
+              <image class="little-picture" src="/images/map.svg" mode="widthFix"></image>
+              <text class="postion">{{data4[7]}},{{data4[8]}}</text>
+            </view>
+            <view style="display: flex;">
+              <image class="little-picture" src="/images/clock.svg" mode="widthFix"></image>
+              <text class="time">{{data4[6]}}</text>
+            </view>
+          </view>
+        </view>
+        <view class = "ans-panel">
+            <view wx:if="{{data4[5]==1}}"><image src="/images/lifething.png" style="height: 2.5vh;margin-top: 1vh;margin-left: 1vw;margin-bottom: 1vh;" mode="heightFix"></image></view>
+            <view wx:elif="{{data4[5]==2}}"><image src="/images/hospitalthing.png" style="height: 2.5vh;margin-top: 1vh;margin-left: 1vw;margin-bottom: 1vh;" mode="heightFix"></image></view>
+            <view wx:else><image src="/images/Socialservice.png" style="height: 2.5vh;margin-top: 1vh;margin-left: 1vw;margin-bottom: 1vh;" mode="heightFix"></image></view>
+            <!-- <text>{{data4[5]}}</text> -->
+            <image src="/images/lookover.png" style="height: 2.5vh;margin-top: 1vh;margin-left: auto;margin-bottom: 1vh;" mode="heightFix" bindtap="tosharedata" data-datanum="1"></image>
+        </view>
+      </view>
+      <view class="item-box">
+        <view class = "ques-panel">
+          <view style="display: flex;">
+            <text class="header1">{{data5[0]}}</text>
+            <text class="num">数量：{{data5[1]}}</text>
+          </view>
+          <view style="display: flex;flex-direction: column;">
+            <view style="display: flex;">
+              <image class="little-picture" src="/images/map.svg" mode="widthFix"></image>
+              <text class="postion">{{data5[7]}},{{data5[8]}}</text>
+            </view>
+            <view style="display: flex;">
+              <image class="little-picture" src="/images/clock.svg" mode="widthFix"></image>
+              <text class="time">{{data5[6]}}</text>
+            </view>
+          </view>
+        </view>
+        <view class = "ans-panel">
+            <view wx:if="{{data5[5]==1}}"><image src="/images/lifething.png" style="height: 2.5vh;margin-top: 1vh;margin-left: 1vw;margin-bottom: 1vh;" mode="heightFix"></image></view>
+            <view wx:elif="{{data5[5]==2}}"><image src="/images/hospitalthing.png" style="height: 2.5vh;margin-top: 1vh;margin-left: 1vw;margin-bottom: 1vh;" mode="heightFix"></image></view>
+            <view wx:else><image src="/images/Socialservice.png" style="height: 2.5vh;margin-top: 1vh;margin-left: 1vw;margin-bottom: 1vh;" mode="heightFix"></image></view>
+            <!-- <text>{{data5[5]}}</text> -->
+            <image src="/images/lookover.png" style="height: 2.5vh;margin-top: 1vh;margin-left: auto;margin-bottom: 1vh;" mode="heightFix" bindtap="tosharedata" data-datanum="2"></image>
+        </view>
+      </view>
+      <view class="item-box">
+        <view class = "ques-panel">
+          <view style="display: flex;">
+            <text class="header1">{{data6[0]}}</text>
+            <text class="num">数量：{{data6[1]}}</text>
+          </view>
+          <view style="display: flex;flex-direction: column;">
+            <view style="display: flex;">
+              <image class="little-picture" src="/images/map.svg" mode="widthFix"></image>
+              <text class="postion">{{data6[7]}},{{data6[8]}}</text>
+            </view>
+            <view style="display: flex;">
+              <image class="little-picture" src="/images/clock.svg" mode="widthFix"></image>
+              <text class="time">{{data6[6]}}</text>
+            </view>
+          </view>
+        </view>
+        <view class = "ans-panel">
+            <view wx:if="{{data6[5]==1}}"><image src="/images/lifething.png" style="height: 2.5vh;margin-top: 1vh;margin-left: 1vw;margin-bottom: 1vh;" mode="heightFix"></image></view>
+            <view wx:elif="{{data6[5]==2}}"><image src="/images/hospitalthing.png" style="height: 2.5vh;margin-top: 1vh;margin-left: 1vw;margin-bottom: 1vh;" mode="heightFix"></image></view>
+            <view wx:else><image src="/images/Socialservice.png" style="height: 2.5vh;margin-top: 1vh;margin-left: 1vw;margin-bottom: 1vh;" mode="heightFix"></image></view>
+            <!-- <text>{{data3[5]}}</text> -->
+            <image src="/images/lookover.png" style="height: 2.5vh;margin-top: 1vh;margin-left: auto;margin-bottom: 1vh;" mode="heightFix" bindtap="tosharedata" data-datanum="3"></image>
+        </view>
+      </view>
+    </view>
+  </swiper-item> 
+</swiper>

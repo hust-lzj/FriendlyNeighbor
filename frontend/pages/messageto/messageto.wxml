@@ -1,0 +1,10 @@
+<image class="back-picture" src="/images/back_left.svg" bindtap="backto"></image>
+<view class ="oval"></view>
+<view class="logo-container">
+  <image class="logo" src="/images/logo.png" mode="widthFix"></image>
+</view>
+<h2 class="header">意见反馈</h2>  
+<view style="margin:auto;margin-top: 2vh;width: 75vw;height: 50vw;">
+        <textarea style="box-shadow: 10rpx 10rpx 10rpx 10rpx #868484;height: 100%;border-radius: 10px 10px 10px 10px;" placeholder="请输入您的意见..." maxlength="500" bindinput="contentupdate"></textarea>
+</view>
+<button class = "mess-send" bindtap="messageover">提交反馈</button>

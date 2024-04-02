@@ -1,0 +1,51 @@
+.oval{
+  position: relative;
+  left:-10vw;
+  right:-10vw;
+  height: 30vh;
+  background-image: linear-gradient(180deg, rgb(92, 233, 221),rgba(99, 231, 220),rgba(102, 235, 202, 0.9));
+  border-radius: 0px 0px 47% 47%;
+  width: 120vw;
+}
+
+.header{
+  position: absolute;
+  left: 40vw;
+  right:40vw;
+  z-index: 1;
+  font-size: 15px;
+  top: 5vh;
+}
+.back-picture{
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  z-index: 2;
+  top:20px;
+}
+/* .picture-top{
+  width: 100%;
+  z-index: 0;
+} */
+.logo-container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  z-index: 2;
+}
+.logo{
+  position: absolute;
+  width: 40vw;
+  top:12vh;
+  z-index: 2;
+}
+.text-box{
+  line-height: 1.8em;
+  padding-bottom:8vh;
+  position: absolute;
+  margin-top: 3vh;
+  left: 10vw;
+  right: 10vw;
+}
+
+

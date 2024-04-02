@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="30" height="30" style="border-color: rgba(187,187,187,1);border-width: 0px;border-style: solid" filter="none">
+    
+    <g>
+    <path d="M16 2c-7.8 0-14 6.2-14 14s6.2 14 14 14 14-6.2 14-14-6.2-14-14-14zM16 28c-6.6 0-12-5.4-12-12s5.4-12 12-12 12 5.4 12 12-5.4 12-12 12z" fill="rgba(255,255,255,1)"></path><path d="M15 8h2v12h-2v-12zM15 22h2v2h-2v-2z" fill="rgba(255,255,255,1)"></path>
+    </g>
+  </svg>

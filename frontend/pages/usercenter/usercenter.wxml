@@ -1,0 +1,32 @@
+<view class="page-container">
+  <image class="back-picture" src="/images/back_left.svg" bindtap="backto"></image>
+  <view class="container">
+    <image class="picture1" src="{{touxiang}}"></image>
+    <view class="container1">
+      <text style="font-size: 25px;">{{username}}</text>
+      <text style="margin-top: 1vh;font-size: small;" bindtap="getadress">华中科技大学</text>
+    </view>
+  </view>
+  <view class="button_container">
+    <button class="button_set" size="mini" bindtap="requirehistory">
+      <image class="btnImg" src="/images/history.svg"></image>
+      <text class="btntext">求助历史</text>
+    </button>
+    <button class="button_set" size="mini" bindtap="sharehistory">
+      <image class="btnImg" src="/images/history.svg"></image>
+      <text class="btntext">分享历史</text>
+    </button>
+    <button class="button_set" size="mini" bindtap="aboutus">
+      <image class="btnImg" src="/images/about.svg"></image>
+      <text class="btntext">关于我们</text>
+    </button>
+    <button class="button_set" size="mini" bindtap="messageto">
+      <image class="btnImg" src="/images/message.svg"></image>
+      <text class="btntext">意见反馈</text>
+    </button>
+  </view>
+  <button class="button_set1" size="mini" bindtap="help">
+      <image class="btnImg" src="/images/help.svg"></image>
+      <text class="btntext">常见帮助</text>
+  </button>
+</view>

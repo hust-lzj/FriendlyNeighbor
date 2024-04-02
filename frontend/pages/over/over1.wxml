@@ -1,0 +1,14 @@
+<view class="page-container">
+  <view class="picture-box">
+    <image class="picture" src="/images/circle.png" mode="widthFix"></image>
+    <image class="picture" src="/images/tick.svg" mode="widthFix"></image>
+  </view>
+  <view class="content">
+    <text>求助信息发布成功!\n</text>
+    <text>请及时关注消息哦~</text>
+  </view>
+  <view>
+    <button class="button1" bindtap="tohistory">求助历史</button>
+    <button class="button2" bindtap="toface">返回首页</button>
+  </view>
+</view>
